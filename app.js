@@ -15,18 +15,18 @@ function loadWeather() {
   function success(position) {
     var latitude = position.coords.latitude; // latitude using geolocation
     var longitude = position.coords.longitude; // longitude using geolocation
-
+    
     // API request:
     $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
-      weather.text("Based on your current location, it is " + Math.round((data.currently.temperature - 32)*5/9) + "° C right now");
+      
+      weather.text(Math.round((data.currently.temperature - 32)*5/9) + "°C");
+      weather.img(data.currently.icon)
     });
   }
-
   // This message is displayed if their is a geolocation error:
   function error() {
     alert("Unable to retrieve your location for weather");
   }
-
   // calling the geolocation API
   navigator.geolocation.getCurrentPosition(success, error);
 
@@ -41,21 +41,15 @@ function loadNews() {
   $.getJSON(url + apiKey, function(data) {
 
     // map() method to call article urls and titles
-
     var titles = data.articles.map(function(articles) {
       return "<a href='" + articles.url + "'>" + articles.title + "</a>";
     });
-
      // joining the titles with two line breaks
-
     news.html(titles.join("<br><br>"));
   });
-
   // the text that will be displayed while the function is making the request
   news.text("fetching news..."); 
 }
-
 loadDate();
 loadWeather();
 loadNews();
-
