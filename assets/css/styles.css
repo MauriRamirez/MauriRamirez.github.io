@@ -5,6 +5,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
+.frontImg{
+    padding-top: 20px;
+}
 img{
     border-radius: 25%;
 }
