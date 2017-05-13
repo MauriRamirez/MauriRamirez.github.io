@@ -33,6 +33,32 @@ function loadWeather() {
   // the text that will be displayed while the function is making the request
   weather.text("fetching weather...");
 }
+function loadIcon() {
+  var icon = $("#icon");
+  var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
+  var apiKey = "725a305fdefd659b7115b8d59e42d9ee"; // API key from Dark Sky
+
+  function success(position) {
+    var latitude = position.coords.latitude; // latitude using geolocation
+    var longitude = position.coords.longitude; // longitude using geolocation
+    
+    // API request:
+    $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?callback=?", function(data) {
+      
+      icon.img(data.currently.icon);
+    });
+  }
+
+  // This message is displayed if their is a geolocation error:
+  function error() {
+    alert("Unable to retrieve your location for weather icon");
+  }
+
+  // calling the geolocation API
+  navigator.geolocation.getCurrentPosition(success, error);
+
+  // the text that will be displayed while the function is making the request
+}
 function loadSummary() {
   var summary = $("#summary");
   var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
@@ -79,5 +105,6 @@ function loadNews() {
 }
 loadDate();
 loadWeather();
+loadIcon();
 loadSummary();
 loadNews();
