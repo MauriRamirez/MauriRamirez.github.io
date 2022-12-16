@@ -36,7 +36,7 @@ function loadWeather() {
 function loadIcon() {
   var icon = $("#icon");
   var url = "https://api.forecast.io/forecast/"; // Dark Sky API url
-  var apiKey = "725a305fdefd659b7115b8d59e42d9ee"; // API key from Dark Sky
+  var apiKey = "576473f50d3849819af8ea496d4cb154"; // API key from Dark Sky
 
   function success(position) {
     var latitude = position.coords.latitude; // latitude using geolocation
