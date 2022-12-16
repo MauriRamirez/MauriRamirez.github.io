@@ -1,0 +1,57 @@
+body{
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  background-color: #ffffff;
+  padding: 0px;
+}
+
+figure {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+figcaption {
+  caption-side: top;
+}
+
+
+#content {
+  max-width: 80%;
+}
+
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+}
+
+.frontImg{
+  padding-top: 20px;
+}
+
+img{
+  border-radius: 5%;
+}
+
+.exhibit{
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+  
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+} 
