@@ -5,32 +5,6 @@ body{
   padding: 0px;
 }
 
-figure {
-  flex: 33.33%;
-  padding: 5px;
-}
-
-figcaption {
-  caption-side: top;
-}
-
-
-#content {
-  max-width: 80%;
-}
-
-.center {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  text-align: center;
-}
-
-.frontImg{
-  padding-top: 20px;
-}
-
 img{
   border-radius: 5%;
 }
