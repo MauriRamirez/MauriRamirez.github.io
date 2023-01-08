@@ -11,6 +11,7 @@
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
+  --top-margin: 1rem;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -67,6 +68,7 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
+
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -302,6 +304,52 @@ footer {
   margin: 2rem 0 0;
 }
 
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  flex-direction: column;
+}
+
+.game h1 {
+  margin-top: var(--top-margin);
+}
+
+.game img {
+  width: 80%;
+  padding: 8px;
+  border-radius: 16px;
+  margin-bottom: var(--bottom-margin);
+  background-color: var(--bg-color);
+}
+
+.game a {
+  width: 8rem;
+  align-items: center;
+  text-align: center;
+}
+
+.description {
+  width: 25rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.description h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.description p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
 /* CSS Resets - Phone & Tablet */
 @media screen and (max-width: 720px) {
   nav {
@@ -341,9 +389,9 @@ footer {
   }
   
   .hero img {
-        height: 100%;
-        width: 100%;
-    }
+    height: 100%;
+    width: 100%;
+  }
   
   .bio {
     background-color: #fff;
