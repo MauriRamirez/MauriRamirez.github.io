@@ -6,7 +6,7 @@ const projects = {
     genre: "Endless-Runner Arcade",
     platform: "Mobile & WebGL",
         
-    image: "assets/Ykeer/Listing Image.png",
+    image: "assets/Ykeer/ListingImage.png",
 
     tools: "Unity, C#",
     roles: "Programmer and Designer",
@@ -39,7 +39,7 @@ const projects = {
     genre: "Action Adventure",
     platform: "PC",
     
-    image: "assets/Rogue/Store System.jpeg",
+    image: "assets/Rogue/StoreSystem.jpeg",
 
     tools: "Unity, C#, Aseprite",
     roles: "Programmer, Designer, & Artist",
@@ -65,7 +65,7 @@ const projects = {
     genre: "Observation & Strategy",
     platform: "PC",
     
-    image: "assets/Scout/Listing Image.png",
+    image: "assets/Scout/ListingImage.png",
     
     tools: "Unity, C#, Aseprite, Blender",
     roles: "Programmer, Designer, & Artist",
@@ -93,7 +93,7 @@ const projects = {
     genre: "Competititve, Strategy, & Dexterity",
     platform: "Board Game",
         
-    image: "assets/Hornigold/Listing Image.png",
+    image: "assets/Hornigold/ListingImage.png",
 
     tools: "Inkscape, Fusion360, 3D Printing",
     roles: "Rules, Component Design, & Art",
@@ -121,7 +121,7 @@ const projects = {
     genre: "Competititve, Strategy, & Dexterity",
     platform: "Board Game",
     
-    image: "assets/CyclesOfRevolt/Listing Image.png",
+    image: "assets/CyclesOfRevolt/ListingImage.png",
 
     tools: "Excel, Inkscape",
     roles: "Everything",
@@ -152,7 +152,7 @@ const projects = {
     genre: "Dexterity Party Game",
     platform: "Board Game",
     
-    image: "assets/FragileWall/Listing Image.png",
+    image: "assets/FragileWall/ListingImage.png",
 
     tools: "Inkscape, Fusion360, 3D Printing",
     roles: "Everything",
@@ -193,8 +193,8 @@ const projects = {
       <br>
     `,
     unity: {
-      buildName: "Movement System",
-      buildUrl: "assets/webgl/Movement System/Build", 
+      buildName: "MovementSystem",
+      buildUrl: "assets/webgl/MovementSystem/Build", 
       companyName: "Lechuga Studios",
       productVersion: "1.0.0",
       resolution: {
@@ -218,8 +218,8 @@ const projects = {
       <br>
     `,
     unity: {
-      buildName: "Combat System",
-      buildUrl: "assets/webgl/Combat System/Build", 
+      buildName: "CombatSystem",
+      buildUrl: "assets/webgl/CombatSystem/Build", 
       companyName: "Lechuga Studios",
       productVersion: "1.0.0",
       resolution: {
@@ -241,8 +241,8 @@ const projects = {
       <br>
     `,
     unity: {
-      buildName: "Inventory System",
-      buildUrl: "assets/webgl/Inventory System/Build", 
+      buildName: "InventorySystem",
+      buildUrl: "assets/webgl/InventorySystem/Build", 
       companyName: "Lechuga Studios",
       productVersion: "1.0.0",
       resolution: {
@@ -264,8 +264,8 @@ const projects = {
       <br>
     `,
     unity: {
-      buildName: "Store System",
-      buildUrl: "assets/webgl/Store System/Build", 
+      buildName: "StoreSystem",
+      buildUrl: "assets/webgl/StoreSystem/Build", 
       companyName: "Lechuga Studios",
       productVersion: "1.0.0",
       resolution: {
