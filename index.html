@@ -1,293 +1,51 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-      <head>
-        <title>Mauricio Ramirez</title>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home – Mauricio Ramirez</title>
+  <link rel="stylesheet" href="assets/css/styles.css?v=8.5">
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar-placeholder"></div>
 
-        <!-- Favicons -->
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="assets/icons/favicon-32x32.png"
-        />
+    <main class="main-content">
+    <section id="welcome" class="animate-fade">
+        <h2>Welcome</h2>
+        <p>
+            Hey! I'm Mauricio Ramirez — I make games, design systems, and code mechanics. 
+            <br> <br>
+            This site is a collection of the things I’ve built, drawn, and prototyped. Hope you enjoy exploring!
+        </p>
+      </section>
 
-        <!--CSS Styles -->
-        <link 
-          rel="stylesheet" 
-          href="assets/css/IndexStyles.css" 
-        />
+    <section class="summary-links animate-fade">        
+        <div class="summary-card">
+          <a href="projects.html">
+            <img src="assets/Ykeer/Listing Image.png" alt="Projects Preview">
+            <h3>Projects</h3>
+            <p>Explore a collection of games I've designed and developed — ranging from experimental digital games to physical board games.</p>
+          </a>
+        </div>
 
-        <body>
-            <nav>
-                <h1>Mauricio Ramirez</h1>
-                <ul class="navigation">
-                  <li><a href="#about" class="nav-link">About</a></li>
-                  <li><a href="#projects" class="nav-link">Projects</a></li>
-                  <li><a href="#art" class="nav-link">Art</a></li>
-                  <li><a href="#renders" class="nav-link">Renders</a></li>
-                  <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <button class="burger-menu" id="burger-menu">
-                  <ion-icon class="bars" name="menu-outline"></ion-icon>
-                </button>
-            </nav>
+        <div class="summary-card">
+          <a href="blog.html?blogs=rogue">
+            <img src= "assets/Rogue/Store System.jpeg" alt="Art Preview">
+            <h3>Dev Blogs</h3>
+            <p>Follow the development of my games system-by-system. Each post highlights a playable demo and explains how core features were designed and implemented.</p>
+          </a>
+        </div>
+      </section>
 
-            <hr>
-            
-            <section class="hero" id="about">
-                <img
-                  src="assets/HoaryShoebill/ShoeBill.png"
-                  alt="HoaryShoebill"
-                  loading="lazy"
-                  class="hero-img"
-                />
-                <div class="bio animate__animated animate__shakeX">
-                  <h2 class="bio-title">About Me</h2>
-                  <p class="bio-text">
-                    I am enthusiastic and motivated problem solver,
-                    currently completing Bachelor of Science in Biomedical
-                    Engineering. Currently working as a Resident Assistant
-                    (RA) and Undergraduate Researcher. 
-                  </p>
-                </div>
-          </section>
+    <hr>
 
-        <section class="more-about">
-            <h2>Working Experience</h2>
-            
-            <h3>Lead Undergraduate Researcher at Neuromechanics of Mobility Lab</h3>
-            <ul>             
-              <li>
-                Conducted research on the biomechanical effects of perturbations 
-                and perception on walking, implementing data analysis techniques 
-                such as Non-Negative Matrix Factorization and Statistical Parametric 
-                Mapping in Matlab
-              </li>
-              <li>
-                Reviewed project plans and independently learned MATLAB coding 
-                and data collection framework
-              </li>
-              <br>  
-            </ul>
+      <footer>
+        <p>&copy; 2025 Mauricio Ramirez</p>
+      </footer>
+    </main>
+  </div>
 
-            <h3>Resident Assistant at WVU</h3>
-            <ul>             
-              <li>
-                Mentored 14 first-year students, while enforcing campus living 
-                policies with written reports
-              </li>
-              <li>
-                Managed community engagement Event Proposals for game nights and 
-                healthy university living seminars
-              </li>
-              <br>    
-          </ul>
-        </section>
-
-        <hr>
-
-        <section class="projects" id="projects">
-          <h2 class="projects-title">Some of my Recent Projects</h2>
-          <div class="projects-container">
-            <div class="project-container project-card">
-              <img
-                src="assets/Lechuga/Ykeer/Listing Image.png"
-                alt="expense-tracker"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">The Ykeer</h3>
-              <p class="project-details">
-
-              </p>
-              <a href="TheYkeer.html" target="_blank" class="project-link">More Info</a>
-            </div>
-            <div class="project-container project-card">
-              <img
-                src="assets/Lechuga/Rogue/Listing Image.png"
-                alt="netflic-clone"
-                loading="lazy"
-                class="project-pic"
-              />
-              <h3 class="project-title">Rogue</h3>
-              <p class="project-details">
-
-              </p>
-              <a href="Rogue.html" target="_blank" class="project-link">More Info</a>
-            </div>
-          </div>
-        </section>
-        
-
-
-        <section class="Art" id="art">
-          <h2 class="art-header">My Art Portfolio</h2>
-    
-          <div class="art-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-              <img
-                src="assets/HoaryShoebill/Face.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="assets/HoaryShoebill/Crow.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="assets/HoaryShoebill/Hand.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-            </div>
-    
-            <div class="second-set animate__animated animate__pulse">
-              <img
-                src="assets/HoaryShoebill/Fist.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="assets/HoaryShoebill/ArmBones.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="assets/HoaryShoebill/Bicep.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section class="Renders" id="renders">
-          <h2 class="renders-header">My Renders Portfolio</h2>
-    
-          <div class="renders-wrapper">    
-            <div class="first-set animate__animated animate__pulse">
-              <img
-                src="assets/HoaryShoebill/BrickWall.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-                style="width: 20rem; height: 16rem;"
-              />
-              <img
-                src="assets/HoaryShoebill/DragonBall.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-                style="width: 20rem; height: 16em;"
-              />
-            </div>
-            <div class="second-set animate__animated animate__pulse">
-              <img
-                src="assets/HoaryShoebill/Pokeballs.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-                style="width: 20rem; height: 11.25rem;"
-                />
-              <img
-                src="assets/HoaryShoebill/Chessboard.png"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-                style="width: 20rem; height: 11.25rem;"
-                />
-            </div>
-          </div>
-        </section>
-        <br><hr>
-
-        <section class="contact" id="contact">
-            <h2>Get In Touch With Me</h2>
-            <div class="contact-form-container">
-              <div class="contact-form">
-                <form 
-                  action="https://formspree.io/f/mknanvqj" 
-                  method="POST"
-                >
-                  <div class="form-control">
-                    <label for="name">
-                      FULL NAME
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="sender-name"
-                      class="input-field"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label for="email">
-                      EMAIL
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="sender-email"
-                      class="input-field"
-                      required
-                    />
-                  </div>
-                  <div class="form-control">
-                    <label for="message">
-                      MESSAGE
-                    </label>
-                    <textarea
-                      id="message"
-                      cols="60"
-                      rows="10"
-                      name="message"
-                      class="input-field"
-                      required
-                    ></textarea>
-                  </div>
-                  <input
-                    type="submit"
-                    value="Submit"
-                    id="submit-btn"
-                    class="submit-btn"
-                  />
-                </form>
-              </div>
-            </div>
-        </section>
-      
-        <footer>
-            <p class="copy">&copy; Copyright 2023</p>
-            <p class="copy">
-              Built by Mauricio Ramirez
-            </p>
-        </footer>
-
-        <!-- Website scripts -->
-        <script src="assets/js/app.js"></script>
-
-        <!-- Ion icons scripts -->
-        <script
-          type="module"
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-          nomodule
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
-
-      </body>
-    </head>
+  <script src="assets/js/include-sidebar.js"></script>
+</body>
 </html>

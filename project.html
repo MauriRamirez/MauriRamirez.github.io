@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project – Mauricio Ramirez</title>
+  <link rel="stylesheet" href="assets/css/styles.css?v=10.2">
+</head>
+<body>
+  <div class="layout">
+    <div id="sidebar-placeholder"></div>
+
+    <main class="main-content">
+        
+      <section id="project-details">
+        <h2 id="project-title">Loading...</h2>
+
+        <section class="showcase-container">
+            <div id="unity-container">
+              <canvas id="unity-canvas" width="400" height="300" tabindex="-1"></canvas>
+              <div id="unity-loading-bar">
+                <div id="unity-logo"></div>
+                <div id="unity-progress-bar-empty">
+                  <div id="unity-progress-bar-full"></div>
+                </div>
+              </div>
+              <div id="unity-warning"> </div>
+            </div>
+            
+            <div id="images-container">
+
+            </div>
+        </section>
+            
+      <h3 id="project-title">Description </h3>
+      
+        <p><strong>Tools: </strong> <span id="project-tools"></span></p>
+        <p><strong>Roles: </strong> <span id="project-roles"></span></p>
+        <p><strong>Teams: </strong> <span id="project-team"></span></p>
+        
+        <br>
+        
+      <div id="project-content"></div>
+
+      </section>
+
+        <hr>
+
+      <footer>
+        <p>&copy; 2025 Mauricio Ramirez</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/include-sidebar.js"></script>
+  <script src="assets/js/project-data.js?v=6.2"></script>
+  <script src="assets/js/project-load.js?v=3.5"></script>
+
+</body>
+</html>
